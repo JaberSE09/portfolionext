@@ -3,6 +3,8 @@ import React from "react";
 import Logo from "../Logo";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon } from "../Icons";
+import { motion } from "framer-motion";
+
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -17,6 +19,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const Navbar = () => {
   return (
+    
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
         <CustomLink href={"/"} title={"Home"} className="mr-4" />
@@ -30,15 +33,15 @@ const Navbar = () => {
       </div>
 
       <nav className="flex justify-center ">
-        <Link href={"https://www.linkedin.com/in/sajidjaber/"} target={"_blank"}>
+        <motion.a href={"https://www.linkedin.com/in/sajidjaber/"} target={"_blank"} whileHover={{y:-2}} whileTap={{scale: 0.9}} className="w-6 mx-3">
           <LinkedInIcon />
-        </Link>
-        <Link href={"https://github.com/JaberSE09"} target={"_blank"}>
+        </motion.a>
+        <motion.a href={"https://github.com/JaberSE09"} target={"_blank"} whileHover={{y:-2}} className="w-6 ml-3">
           <GithubIcon />
-          </Link>
+          </motion.a>
       </nav>
     </header>
   );
-};
+  }
 
 export default Navbar;
