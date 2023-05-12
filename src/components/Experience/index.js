@@ -1,12 +1,21 @@
 import React, { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import LiIcon from "../LiIcon";
+
 const Details = ({ position, company, time, address, work }) => {
+  const ref = useRef(null);
   return (
-    <li className="my-8 first-mt-0 last-mt-0 w-[60%] mx-auto flex flex-col items-center justify-between">
+    <li
+      ref={ref}
+      className="my-8 first-mt-0 last-mt-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+    >
       {" "}
-      <LiIcon />
-      <div>
+      <LiIcon reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
+      >
         <h3 className="capitalize font-bold text-2xl">
           {position} &nbsp; @ {company}
         </h3>
@@ -14,7 +23,7 @@ const Details = ({ position, company, time, address, work }) => {
           {time} | {address}{" "}
         </span>
         <p className="font-medium w-full">{work}</p>
-      </div>
+      </motion.div>
     </li>
   );
 };
