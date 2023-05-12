@@ -52,7 +52,7 @@ const Experience = () => {
             time={"2018-Present"}
             address={"9123 W Lincoln Ave West Allis Wi 53227"}
             work={
-              "As a Manager at U.S. Cellular, I play a vital role in overseeing day-to-day operations and driving the success of our store. My responsibilities span a wide range, from developing strategies to enhance customer satisfaction to managing staff performance and productivity."
+              "As a Freelance Remote Web Developer, I use my extensive skills to create dynamic, user-friendly, and aesthetically pleasing websites. I work independently, efficiently, and remotely, collaborating with various teams to meet and surpass project expectations."
             }
           />
           <Details
@@ -61,16 +61,16 @@ const Experience = () => {
             time={"2018-2022"}
             address={"Remote"}
             work={
-              "As a Freelance Remote Web Developer, I use my extensive skills to create dynamic, user-friendly, and aesthetically pleasing websites. I work independently, efficiently, and remotely, collaborating with various teams to meet and surpass project expectations."
+              "As a Manager at U.S. Cellular, I play a vital role in overseeing day-to-day operations and driving the success of our store. My responsibilities span a wide range, from developing strategies to enhance customer satisfaction to managing staff performance and productivity."
             }
           />
           <Details
-            position={"Remote Web Developer (Freelancer)"}
-            company={"self-employed"}
-            time={"2018-Present"}
-            address={"Remote"}
+            position={"Web Technician"}
+            company={"Cudahy PC"}
+            time={"2016-2018"}
+            address={"4846 S Packard Ave Cudahy Wi 53110"}
             work={
-              "As a Freelance Remote Web Developer, I use my extensive skills to create dynamic, user-friendly, and aesthetically pleasing websites. I work independently, efficiently, and remotely, collaborating with various teams to meet and surpass project expectations."
+              "As a Web Technician at Cudahy PC, I was responsible for a variety of tasks related to web-based systems. I designed and implemented new web applications using languages like HTML, CSS, and JavaScript. Maintenance of existing websites was also part of my job, which included regular updates and troubleshooting. I ensured web security, optimizing user experience across different devices and browsers. I also worked on SEO to improve our websites' search engine rankings. Staying informed about the latest web technologies and working closely with other team members were essential aspects of my role."
             }
           />
         </ul>
