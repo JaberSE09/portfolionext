@@ -9,6 +9,7 @@ const Skill = ({ name, x, y }) => {
       initial={{ x: 0, y: 0 }}
       animate={{ x: x, y: y }}
       transition={{ duration: 1.5 }}
+      viewport={{once:true}}
     >
       {name}
     </motion.div>
@@ -38,9 +39,9 @@ function Skills() {
         <Skill name="Tailwind CSS" x="15vw" y="10vw" />
         <Skill name="PHP" x="15vw" y="20vw" />
         <Skill name="MYSQL" x="15vw" y="15vw" />
-        <Skill name="MongoDB" x="vw" y="10vw" />
         <Skill name="MYSQL" x="0vw" y="15vw" />
         <Skill name="Java" x="0vw" y="20vw" />
+        <Skill name="MongoDB" x="0vw" y= "10vw" />
         <Skill name="MYSQL" x="0vw" y="15vw" />
         <Skill name="C++" x="-15vw" y="15vw" />
         <Skill name="C#" x="-15vw" y="10vw" />
