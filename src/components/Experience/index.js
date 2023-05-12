@@ -50,15 +50,15 @@ const Experience = () => {
             position={"Remote Web Developer (Freelancer)"}
             company={"self-employed"}
             time={"2018-Present"}
-            address={"Remote"}
+            address={"9123 W Lincoln Ave West Allis Wi 53227"}
             work={
-              "As a Freelance Remote Web Developer, I use my extensive skills to create dynamic, user-friendly, and aesthetically pleasing websites. I work independently, efficiently, and remotely, collaborating with various teams to meet and surpass project expectations."
+              "As a Manager at U.S. Cellular, I play a vital role in overseeing day-to-day operations and driving the success of our store. My responsibilities span a wide range, from developing strategies to enhance customer satisfaction to managing staff performance and productivity."
             }
           />
           <Details
-            position={"Remote Web Developer (Freelancer)"}
-            company={"self-employed"}
-            time={"2018-Present"}
+            position={"Manager"}
+            company={"U.S. Cellular"}
+            time={"2018-2022"}
             address={"Remote"}
             work={
               "As a Freelance Remote Web Developer, I use my extensive skills to create dynamic, user-friendly, and aesthetically pleasing websites. I work independently, efficiently, and remotely, collaborating with various teams to meet and surpass project expectations."
