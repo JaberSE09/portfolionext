@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from "react";
 import profilePic from "../../../public/images/sajid.png";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-
+import Skills from "@/components/Skills";
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
@@ -47,25 +47,24 @@ const About = () => {
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/77 ">
                 About Me
               </h2>
-              <p>
-                <p className="m-3">
+                <div className="m-3">
                   With a passion for coding and a steadfast dedication to
                   creating engaging user experiences, I am a full-stack web
                   developer specializing in the MERN stack (MongoDB, Express.js,
                   React.js, and Node.js). I have a keen interest in solving
                   complex problems and am driven by the desire to build
                   innovative, scalable, and responsive web applications.{" "}
-                </p>
+                </div>
 
-                <p className="m-3">
+                <div className="m-3">
                   I earned a Bachelor's degree in Computer Science and have
                   since been honing my skills in the exciting realm of web
                   development. Throughout my career, I have developed a unique
                   mix of technical acumen and creativity that enables me to
                   build visually appealing and functionally robust applications.
-                </p>
+                </div>
 
-                <p className="m-3">
+                <div className="m-3">
                   My portfolio showcases a range of projects, where I have
                   demonstrated my ability to design, develop, and deploy
                   full-stack web applications using the MERN stack. I am
@@ -75,8 +74,8 @@ const About = () => {
                   effective team player, consistently contributing to achieving
                   shared goals while also demonstrating the ability to work
                   independently.
-                </p>
-                <p className="m-3">
+                </div>
+                <div className="m-3">
                   Additionally, I'm always eager to learn new technologies and
                   expand my skill set to keep up with the ever-evolving digital
                   landscape. When I'm not coding, you'll find me reading about
@@ -86,8 +85,7 @@ const About = () => {
                   discussing potential projects. I'm always excited to connect
                   with fellow developers, potential employers, or anyone who
                   shares my passion for technology.
-                </p>
-              </p>
+                </div>
             </div>
 
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark">
@@ -121,6 +119,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
