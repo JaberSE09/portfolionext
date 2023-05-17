@@ -6,6 +6,29 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import portfolio from '../../../public/images/portfolio.png'
+
+
+const Project =({type, title, img, link, github }) =>{
+  <article className="w-full flex items-center justify-center rounded-2xl border border-sol
+   border-dark bg-light p-6 relative">
+  <Link href={link} target="_blank" className="w-full cursor-pointer overflow-hidden rounded-lg">
+    <Image src={img} alt={title} className=" w-full h-full" />
+  </Link>
+  <div className="w-full flex flex-col items-start pl-6">
+    <span className="text-primary font-medium text-xl">{type}</span>
+    <Link href={link} target="_blank">
+      <h2 className="my-2 w-full text-left text-4xl font-bold underlined underline-offset-2">{title}</h2>
+    </Link>
+  <div className="mt-2 flex items-center"> 
+  <Link className="w-10" href={github} target="_blank"><GithubIcon /> </Link>
+  <Link href={link}
+  className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+  target="_blank">Visit </Link>
+  
+  </div>
+  </div>
+</article>
+}
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article className="p-12 w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl">
@@ -58,7 +81,11 @@ const Projects = () => {
               img={portfolio}
               />
             </div>
-            <div className="col-span-6">Project 1</div>
+            <div className="col-span-6"><Project 
+            title={}
+            
+            
+            </div>
             <div className="col-span-6">Project 2</div>
             <div className="col-span-6">Project 1</div>
             <div className="col-span-6">Project 2</div>
